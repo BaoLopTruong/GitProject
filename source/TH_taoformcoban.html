@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành tạo form cơ bản</title>
+    <style>
+        .wufoo {
+        font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+        .p{
+            font-weight: 600;
+        }
+        </style>
+</head>
+<body>
+    
+    <form class = "wufoo"> 
+        <fieldset style="width: 300px; border-color: lightblue; box-shadow: 5px 5px 3px 3px lightblue;">
+        <h3> ORDER FORM</h3>
+        <p style="font-weight: 600;">What would you like to buy?</p>
+        <select>
+
+            <option value=" "> A </option>
+            <option> B ( + 0.5$) </option>
+            <option> C ( + 0.5$) </option>
+        </select>
+        <p style="font-weight: 600;">Howw many would you like to order?</p>
+        <input type="radio" name="slandprices"> 1 - $10 <br>
+        <input type="radio" name="slandprices"> 2 - $20 <br>
+        <input type="radio" name="slandprices"> 3 - $25 <br>
+
+        <p style="font-weight: 600;"> Name  <span style="color: red;" >*</span> </p> 
+        <input type="text" name="firstname" placeholder="Write your fist name here">  
+        <input type="text" name="lastname" placeholder="Write your last name here">  <br>
+
+        <p style="font-weight: 600;">Email</p>
+        <input type="email" name="email" placeholder="nhap email cua ban o day">  <br>
+
+        <p style="font-weight: 600;">Phone Number</p>
+        <input type = "text" name="p1" size="5"/> -
+        <input type = "text" name="p2" size="5"/> -
+        <input type = "text" name="p3" size="5"/>
+
+        
+        <br><input type="submit" value="Submit">
+    </fieldset>
+    </form>
+
+
+</body>
+</html>
