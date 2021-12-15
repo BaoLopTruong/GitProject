@@ -4,4 +4,4 @@ let area = width * height;
 
 document.write("Weight = " + width + "<br>");
 document.write("Height = " + height + "<br>");
-document.write("Area= width * height = 20 * 10 = " + area+ "<br>");
+document.write("Area= width * height ="+ width +" * " + height  + " =  " + area +"<br>");
