@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" lang="javascript" src="bai2.js"></script>
+    <title>Bài 2: Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form action="">
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <td><input type="text" id="amount" placeholder="nhập giá trị vào đây">    </td>
+            <td> <select name="fromcurrency" id="sl1">
+                <option value="VND">Việt Nam</option>
+                <option value="USD">Đô La Mỹ</option>
+            </select></td>
+
+            <td> <select name="tocurrency" id="sl2">
+                <option value="USD">Đô La Mỹ</option>
+                <option value="VND">Việt Nam</option>
+                
+            </select></td>
+            <td> <button type="button" style="background-color: blueviolet; color: #fff; border-color: blue ;" onclick="Converts()"> Convert</button> </td>
+        </tr>
+
+        <tr>
+            <td colspan="4"> <span>Result:</span> <span id="kqua"></span> </td>
+        </tr>
+    </table>
+
+
+</form>
+</body>
+</html>
