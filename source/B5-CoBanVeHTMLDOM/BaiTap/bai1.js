@@ -73,7 +73,7 @@ function TinhHieu(){
     var b = parseFloat(document.getElementById("input2").value);
    
     console.log(a, b);
-    var add = a - b
+    var add = a - b;
     document.getElementById("kqua1").innerHTML = add;
 
 }
@@ -84,7 +84,7 @@ function TinhTich(){
     var b = parseFloat(document.getElementById("input2").value);
    
     console.log(a, b);
-    var add = a * b
+    var add = a * b;
     document.getElementById("kqua1").innerHTML = add;
 
 } 
@@ -95,7 +95,7 @@ function TinhThuong(){
     var b = parseFloat(document.getElementById("input2").value);
    
     console.log(a, b);
-    var add = a / b
+    var add = a / b;
     document.getElementById("kqua1").innerHTML = add;
 
 } 
@@ -103,3 +103,26 @@ function TinhThuong(){
 //Yêu cầu mở rộng:
 //Chúng ta có sử dụng 1 hàm duy nhất thay cho 4 hàm ở trên không?
 //Nâng cấp ứng dụng để trở nên cao cấp hơn. Có thể tham khảo giao diện calculator của Google.
+function Calculators(value){
+    var a = parseFloat( document.querySelector("#input1").value );
+    var b = parseFloat(document.getElementById("input2").value);
+    if(value == "add"){
+        var add = a + b;
+    document.getElementById("kqua1").innerHTML = add;
+    }
+    else if( value =="sub"){
+        var add = a - b;
+    document.getElementById("kqua1").innerHTML = add;
+    }
+    else if( value =="mul"){
+        var add = a * b;
+    document.getElementById("kqua1").innerHTML = add;
+    }
+    else if( value =="div"){
+        var add = a / b;
+    document.getElementById("kqua1").innerHTML = add;
+    }
+    else{
+        document.getElementById("kqua1").innerHTML = "Something Wrong. Try again.";
+    }
+}
