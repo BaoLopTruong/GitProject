@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" lang="javascript" src="bai7.js"></script>
+    <title>Bài 7: Tính điểm đại học khối D</title>
+</head>
+<body>
+    <form action="">
+
+        <h3>Tính điểm ĐH khối D</h3>
+        <span>Môn Toán</span> <input type="number" id="toan" placeholder="nhập điểm môn Toán ở đây"> <br> <br>
+        <span>Môn Văn</span> <input type="number" id="van" placeholder="nhập điểm môn Văn ở đây" style="margin-left: 5px;"><br> <br>
+        <span>Môn Anh</span> <input type="number" id="anh" placeholder="nhập điểm môn Anh ở đây" style="margin-left: 5px;"><br> <br>
+        <span>Khu vực</span> <select name="khuvuc" id="khuvuc">
+
+            <option value="0.75"> KV1</option>
+            <option value="0.25"> KV2</option>
+            <option value="0.5"> KV2-NT</option>
+            <option value="0"> KV3</option>
+        </select>
+        <br> <br>
+<input type="button" id="total" onclick="tinhdiem()" value="Tính Điểm">
+<br> <br>
+<span id="kqua" style="font-size: 30px ; color: red;"></span>
+    </form>
+</body>
+</html>
