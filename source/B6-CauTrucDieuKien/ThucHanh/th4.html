@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" lang="javascript" src="th4.js"></script>
+    <title>Thực hành 4: Luyện Tập Với Toán Tử Ba Ngôi</title>
+</head>
+<body>
+    <h2>Bài 1: Viết chương trình nhập vào giá trị cho a và b. Tính tổng a và b, nếu tổng nhỏ hơn 4, hiển thị chuỗi Below, 
+        ngược lại hiển thị Over. Lưu ý sử dụng toán tử ? :</h2>
+    <pre>
+        if ((a + b) < 4) {
+            result = 'Below';
+        } else {
+            result = 'Over';
+        }
+    </pre>
+    <h3>Bài làm:</h3>
+    <span>Tính tổng và kiểm tra giá trị: </span>  <br> <br>
+     <input type="text" id= "soA" placeholder="Nhập A ở đây"> <br> <br>
+     <input type="text" id= "soB" placeholder="Nhập B ở đây" onchange="checkaddfunction()"> 
+    <hr>
+    
+    <h2>Bài 2: Viết chương trình nhập vào giá trị cho chuỗi message.</h2>
+    <pre>
+        Nếu giá trị nhập vào là Employee thì hiển thị chuỗi Hello.
+        Còn lại nếu giá trị nhập vào là Director thì hiển thị chuỗi Greetings
+        Còn lại nếu giá trị nhập vào chuỗi rỗng thì hiển thị No login
+        Còn lại hiển thị chuỗi rỗng
+        Sử dụng toán tử ? : để viết chương trình với cấu trúc điều kiện như sau:
+        let message;
+
+        if (login == 'Employee') {
+            message = 'Hello';
+        } else if (login == 'Director') {
+            message = 'Greetings';
+        } else if (login == '') {
+            message = 'No login';
+        } else {
+            message = '';
+        }
+    </pre>
+    <h3>Bài làm:</h3>
+    <span>Nhập một chuỗi:</span> <input type="text" id='chuoi' placeholder=" Nhập ở đây" onchange="messagefunction()">
+</body>
+</html>
