@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" lang="javascript" src="th3.js"></script>
+    <title>Thực hành 3: Luyện Tập Cấu Trúc Switch -Case</title>
+</head>
+<body>
+    
+<h2>Bài 1: Viết lại cấu trúc if sau thành cấu trúc switch</h2>
+<pre>
+    if (browser == 'Edge') {
+        alert("You've got the Edge!");
+    } else if (browser == 'Chrome' || browser == 'Firefox' || browser == 'Safari' || browser == 'Opera') {
+        alert('Okay we support these browsers too');
+    } else {
+        alert('We hope that this page looks ok!');
+    }
+</pre>
+<h3>Sửa:</h3>
+<span>Nhập tên trình duyệt: </span>
+ <input type="text" id= "browser" placeholder="Nhập ở đây"> <br> <br>
+ <button type="button" onclick="checkbrower()">Check Browser</button>
+<hr>
+
+<h2>Bài 2: Viết lại cấu trúc if sau thành cấu trúc switch</h2>
+<pre>
+    let a = prompt('a?', '');
+
+    if (a == 0) {
+        alert(0);
+    }
+    
+    if (a == 1) {
+        alert(1);
+    }
+    
+    if (a == 2 || a == 3) {
+        alert('2,3');
+    }
+</pre>
+<h3>Sửa:</h3>
+<span>Nhập một trong các số sau:</span> <input type="text" id='numbers' placeholder=" 0, 1, 2, 3" onchange="numberfunction()">
+
+<hr>
+<h2>Bài 3: Sử dụng cấu trúc if…else, nhập vào một số, kiểm tra giá trị của số nhập vào</h2>
+<pre>
+    Nếu số đó lớn hơn 0 hiển thị 1
+    Còn lại nếu số đó nhỏ hơn 0 thì hiển thị -1
+    Còn lại hiển thị 0
+</pre>
+<h3>Bài làm:</h3>
+
+<span>Nhập một số:</span> <input type="text" id='numberss' placeholder=" input number here" onchange="checknumberfunction()">
+</body>
+</html>
