@@ -106,14 +106,14 @@ function bai6function(){
 function bai7function(){
 
     for(var i= 1; i <=100; i ++){
-        if(i % 3 == 0){
-            document.getElementById('kqb7').innerHTML +=  "Fizz - ";
+        if(i % 3 == 0 && i % 5 == 0){
+            document.getElementById('kqb7').innerHTML +=  "FizzBuzz - ";
         }
         else if(i % 5 == 0){
             document.getElementById('kqb7').innerHTML +=  "Buzz - ";
         }
-        else if(i% 3 == 0 && i % 5 == 0){
-            document.getElementById('kqb7').innerHTML +=  "FizzBuzz - ";
+        else if(i% 3 == 0 ){
+            document.getElementById('kqb7').innerHTML +=  "Fizz - ";
         }
         else{
             document.getElementById('kqb7').innerHTML += i + " -";
