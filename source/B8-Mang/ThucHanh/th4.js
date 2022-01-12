@@ -5,7 +5,7 @@ for(let i=0; i< n; i++){
     arrs[i] = parseInt(prompt("nhập giá trị cho a[" + i + "] ="));
 }
 
-document.write(" Mảng a: ");
+document.write(" Mảng a[" + n +"] = ");
 for(let i = 0; i< arrs.length ; i++){
     document.write( arrs[i] + " ");
     
