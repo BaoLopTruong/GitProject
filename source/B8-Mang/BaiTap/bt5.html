@@ -32,6 +32,17 @@ VD: input [
 ]
 
 ouput: 1 + 2+ 5+ 5+ 2 + 3 + 1 + 2 + 9 + 5
+Cách 1: xoay mảng 
+Cách 2: for(let j =0; j< arr[0].length; j++){
+    for(let i = 0 ; i< arr.length; i++){
+        if(arr[i][j] == 0){
+            continue;
+        }
+        else{
+            sum += arr[i][j]
+        }
+    }
+}
     </pre>
 </body>
 </html>
