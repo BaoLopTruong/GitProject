@@ -18,6 +18,45 @@
 
   <br> <br>
     <span id="results"></span>
+
+
+<!-- form 2 -->
+
+<form action="">
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <td><input type="text" id="amount" placeholder="nhập giá trị vào đây">    </td>
+            <td> <select name="fromcurrency" id="sl1">
+                <option value="met">Meters</option>
+                <option value="feet">Feet</option>
+            </select></td>
+
+            <td> <select name="tocurrency" id="sl2">
+                <option value="feet">Feet</option>
+                <option value="met">Meters</option>
+                
+            </select></td>
+            <td> <button type="button" style="background-color: blueviolet; color: #fff; border-color: blue ;" onclick="Converts()"> Convert</button> </td>
+        </tr>
+
+        <tr>
+            <td colspan="4"> <span>Result:</span> <span id="kqua"></span> </td>
+        </tr>
+    </table>
+
+
+</form>
+
+
+
+
     <script src="bt1.js"></script>
 </body>
 </html>
