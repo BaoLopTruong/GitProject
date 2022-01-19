@@ -57,19 +57,19 @@ function Converts(){
     var change = document.getElementById("sl2").value;
     var current = document.getElementById("sl1").value;
   
-    console.log(value + change + current);
+    console.log(value  + current + change);
 
-if(current== "meters"){
+if(current== "met"){
     switch(change){
     case "feet": 
-        let S= MetersToFeet(value);
+        let S= value *3.279;
         console.log(S);
-        document.getElementById('kqua').innerHTML = S ;
+        document.querySelector("#kqua").innerHTML = S ;
         break;
     
-    case "meters":
-        let S = value;
-        document.getElementById('kqua').innerHTML = S ;
+    case "met":
+        
+        document.querySelector("#kqua").innerHTML = value ;
         break;
         
     }
@@ -78,17 +78,17 @@ else if(current == "feet"){
 
     switch(change){
         case "feet": 
-            let S = value;
-            document.getElementById('kqua').innerHTML = S ;
+            
+             document.querySelector("#kqua").innerHTML = value ;
             break;
         
-        case "meters":
-            let S= FeetToMeters(value);
+        case "met":
+            let S= value * 0.305;
             console.log(S);
-            document.getElementById('kqua').innerHTML = S ;
+            document.querySelector("#kqua").innerHTMLL = S ;
             break;
           
-            break;
+        
             
         }
 
