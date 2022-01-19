@@ -44,6 +44,6 @@ function checksnt(){
         kiemtrasnt(snt);
     }
     else{
-        alert("Vui lòng nhập giá trị 0 < n < 1000");
+        alert("Vui lòng nhập giá trị 0 < n < 10000");
     }
 }
