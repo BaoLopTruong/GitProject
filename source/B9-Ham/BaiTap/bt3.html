@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 3: Luyện tập tạo và sử dụng hàm </title>
+</head>
+<body>
+    <pre>
+Bài 1: Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng.
+Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.
+    </pre>
+    <input type="text" id="value1" placeholder="Nhập giá trị thứ nhất">
+    <input type="text" id="value2" placeholder="Nhập giá trị thứ hai" onchange="b1function()">
+    <hr>
+    <pre>
+Bài 2: Tạo một mảng với bảy phần tử dạng chuỗi có giá trị là tên các ngôi sao sau: Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe và Regulus.
+Tạo một mảng khác với bảy phần tử dạng chuỗi có giá trị là tên các chòm sao tương ứng chứa các ngôi sao: Ursa Minor, Tarurus, Cygnus, Lyra, Aquila, Ursa Major và Leo.
+Tiếp theo, tạo một hàm nhận vào một tham số dạng chuỗi duy nhất. Trong hàm này, duyệt qua mảng thứ nhất để tìm tên ngôi sao. Nếu tìm thấy, trả lại giá trị tương ứng với chỉ số đó ở mảng thứ hai.
+Nói cách khác, trả lại tên chòm sao của ngôi sao đó. Trong phần <body> của trang web, dùng hộp thoại prompt để người dùng nhập vào tên của ngôi sao, sau đó gọi hàm với thông tin đầu vào. 
+Đừng quên xử lý trong trường hợp không tìm thấy ngôi sao nào. Cho kết quả hiển thị trên màn hình.
+    </pre>
+    <button onclick="FindStar()">Click Me</button>
+    <hr>
+    <pre>
+Bài 3: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+    </pre>
+    <input type="text" id="mu2" placeholder="Nhập một số muốn tính bình phương" onkeyup="showresult()">
+<hr>
+<pre>
+Bài 4: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được.
+</pre>
+<input type="text" id="idR" placeholder="Nhập bán kính hình tròn" onchange="showresult4()">
+<hr>
+<pre>
+Bài 5: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+</pre>
+<input type="text" id="idGT" placeholder="Nhập một số bất kỳ" onchange="showresult5()">
+<hr>
+<pre>
+Bài 6: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+</pre>
+<input type="text" id="idnumber" placeholder="Nhập một ký tự bất kỳ" >
+<button onclick="showresult6()"> Check</button>
+<hr>
+
+<pre>
+Bài 7: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+</pre>
+<input type="text" id="idA" placeholder="Nhập một số bất kỳ" >
+<input type="text" id="idB" placeholder="Nhập một số bất kỳ" >
+<input type="text" id="idC" placeholder="Nhập một số bất kỳ" >
+<button onclick="showresult7()"> FInd</button>
+<hr>
+<pre>
+Bài 8: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
+Nếu là nguyên dương trả về true, ngược lại trả về false.
+</pre>
+<input type="text" id="idN" placeholder="Nhập một số bất kỳ" >
+<button onclick="showresult8()"> Check</button>
+
+<hr>
+<pre>
+Bài 9: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+</pre>
+<button onclick="nhapmang()"> Nhập mảng</button>
+<button onclick="showresult9()"> Đảo mảng</button>
+<p id="results"></p>
+<hr>
+<pre>
+Bài 10: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. 
+Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1. 
+</pre>
+<input type="text" id="id10" placeholder="Nhập một chuỗi ký tự">
+<button onclick="checkfunction()">Check</button>
+    <script src="bt3.js"></script>
+</body>
+</html>
