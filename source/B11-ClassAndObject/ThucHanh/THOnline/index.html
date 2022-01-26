@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle</title>
+</head>
+<body>
+    <!-- Vẽ hình tròn bằng canvas -->
+
+    <canvas id= "my-canvas" width="400" height="500"></canvas>
+    <script src="Circle.js"></script>
+    <script >
+            let cricle = new Circle(5,'red');
+            let Area = cricle.getArea();
+            console.log(Area);
+        console.log(cricle.radius + " "+ cricle.color)
+            function drawCircle(){
+                var c =document.getElementById('my-canvas');
+                var ctx = c.getContext("2d");
+                ctx.beginPath();
+                ctx.fillStyle= cricle.color;
+                ctx.arc(50,50,50,50, Math.PI*cricle.radius*cricle.radius);
+                ctx.stroke();
+            }
+            
+            drawCircle();
+
+    </script>
+</body>
+</html>
