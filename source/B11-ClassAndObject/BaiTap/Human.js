@@ -43,7 +43,7 @@ class Human{
     }
 
     say(String){
-          console.log(String);
+          return String;
     }
 
     getName(){
