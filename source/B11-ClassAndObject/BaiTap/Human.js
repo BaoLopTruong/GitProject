@@ -19,6 +19,9 @@ class Human{
     setGender(newGender){
         this.gender = newGender;
     }
+    getGender(){
+        return this.gender;
+    }
 
     checkApple(Apple){
         // if(Apple.isEmpty() ){
