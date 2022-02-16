@@ -1,0 +1,9 @@
+#game{
+    text-align: center;
+    display: flex; 
+    margin-left: 300px;
+}
+
+.canvas{
+  margin:  auto;
+}
