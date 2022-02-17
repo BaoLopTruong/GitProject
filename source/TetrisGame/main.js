@@ -77,7 +77,8 @@ class Piece{
             this.draw();
         }
         else{
-            p.randomPiece();
+            this.lock();
+            p = randomPiece();
         }
       
     }
@@ -134,7 +135,7 @@ class Piece{
         if(!this.collision(0, 0, nextPattern)){
             this.unDraw();
             this.x += move;
-            this.tetromino = (this.tetrominoN +1) % this.tetromino.length;
+            this.tetrominoN = (this.tetrominoN +1) % this.tetromino.length;
             this.activeTetromino = this.tetromino[this.tetrominoN];
             this.draw();
         }
@@ -151,15 +152,15 @@ class Piece{
                 let newX = this.x + c + x;
                 let newY = this.y + r + y;
 
-                if(this.x < 0 || this.x > COL || this.y > ROW){
+                if(this.x + c + x < 0 || this.x + c + x >= COL || this.y + r + y >= ROW){
                     return true;
                 }
 
-                if(this.y < 0){
+                if(this.y + r + y < 0){
                     continue;
                 }
 
-                if(board[this.y][this.x] != COLOR){
+                if(board[newY][newX] != COLOR){
                     return true;
                 }
 
@@ -198,7 +199,7 @@ document.addEventListener('keydown', function(e){
         p.moveRight();
     }
     else if(e.keyCode == 38){
-        //p.rotate();
+        p.rotate();
     }
     else if(e.keyCode == 40){
         p.moveDown();
