@@ -1,0 +1,16 @@
+body{
+  /* background-image: url(../TetrisGame/screen-9.jpg); */
+}
+.game{
+    
+    margin-left: 830px;
+    
+}
+
+.canvas{
+  
+}
+
+h1{
+  text-align: center;
+}
