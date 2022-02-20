@@ -7,6 +7,7 @@ const SQ = 40; // kích thước của một ô
 const COLOR = "WHITE"; // color của ô
 
 let score =0;
+let high_score = score;
 
 
 function drawSquare(x, y, color){
@@ -88,3 +89,10 @@ function drop(){
     }, 1000)
 }
 drop();
+
+
+function Reloadgame(){
+    document.getElementById('reloadgame').style.display = "none";
+    location.reload();
+
+}

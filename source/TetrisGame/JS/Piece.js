@@ -69,6 +69,12 @@ class Piece{
                 if(this.y + r < 0){
                     alert("Game Over");
                     gameOver = true;
+                    document.getElementById('reloadgame').style.display = "block";
+                    if(score > high_score)
+                    {
+                        high_score = score;
+                        document.getElementById('high-score').innerHTML = high_score;
+                    }
                     break;
                 }
 
@@ -98,7 +104,8 @@ class Piece{
                 score += 10;
             }
         }
-        console.log(score);
+        document.getElementById('score').innerHTML = score;
+
         drawBoard();
         //document.querySelector('#score').innerText = sorce;
     }

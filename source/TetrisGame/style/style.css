@@ -1,16 +1,51 @@
 body{
-  /* background-image: url(../TetrisGame/screen-9.jpg); */
-}
-.game{
-    
-    margin-left: 830px;
-    
+  background-image: url(../image/images.jpg);
 }
 
-.canvas{
+.main{
+  margin-left: 380px;
   
+}
+.game{
+ 
+  float: left;
+  position: relative;
+    
+}
+h2{
+  /* text-align: center; */
+  margin-left: 100px ;
+}
+
+.Tutorial{
+  font-size: 20px;
+  float: left;
+  color: white;
+
+}
+
+.score-box{
+  color: white;
+  font-size: 30px;
+}
+#score{
+  margin-right:  130px;
+}
+
+#canvas{
+  position: relative;
 }
 
 h1{
   text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#reload{
+  position: absolute;
+ 
+  margin-right: 300px;
+ 
 }
