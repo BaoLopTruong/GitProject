@@ -159,5 +159,15 @@ class Piece{
         }
         return false;
     }
+    clear(){
+        for(let r = 0; r < this.activeTetromino.length; r++){
+            for(let c = 0; c < this.activeTetromino.length; c++){
+                if(this.activeTetromino[r][c]){
+                    drawSquare(this.x + c, this.y + r, COLOR);
+                    this.unDraw();
+                }
+            }
+        }
+    }
 
 }

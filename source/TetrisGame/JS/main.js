@@ -38,7 +38,7 @@ function drawBoard(){
     }
 }
 
-drawBoard();
+// drawBoard();
 
 
 const PIECES = [
@@ -57,7 +57,8 @@ function randomPiece(){
 }
 
 let p = randomPiece();
- console.log(p)
+ 
+ //console.log(p)
 
  // viest sự kiện click phím mũi tên
 document.addEventListener('keydown', function(e){
@@ -86,13 +87,21 @@ function drop(){
         }else{
             clearInterval(interval);
         }
-    }, 1000)
+    }, 1500)
 }
-drop();
+//drop();
 
 
 function Reloadgame(){
     document.getElementById('reloadgame').style.display = "none";
+    document.getElementById('startgame').style.display = "block";
     location.reload();
 
+}
+
+drawBoard();
+function StartGame(){
+   
+    document.getElementById('startgame').style.display = "none";
+    drop();
 }
