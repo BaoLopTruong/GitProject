@@ -7,7 +7,7 @@ const SQ = 40; // kích thước của một ô
 const COLOR = "WHITE"; // color của ô
 
 let score =0;
-let high_score = score;
+let high_score = 0;
 
 
 function drawSquare(x, y, color){
@@ -90,13 +90,13 @@ function drop(){
     }, 1500)
 }
 //drop();
-
+document.getElementById('high-score').innerHTML = window.localStorage.getItem(high_score);
 
 function Reloadgame(){
     document.getElementById('reloadgame').style.display = "none";
     document.getElementById('startgame').style.display = "block";
     location.reload();
-
+ 
 }
 
 drawBoard();

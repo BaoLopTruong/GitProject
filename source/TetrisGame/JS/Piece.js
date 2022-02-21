@@ -73,7 +73,10 @@ class Piece{
                     if(score > high_score)
                     {
                         high_score = score;
-                        document.getElementById('high-score').innerHTML = high_score;
+                       // document.getElementById('high-score').innerHTML = high_score;
+                       
+                       document.getElementById('high-score').innerHTML = high_score;
+                       window.localStorage.setItem(high_score, score);
                     }
                     break;
                 }
